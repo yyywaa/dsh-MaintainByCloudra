@@ -1,0 +1,20 @@
+# 克劳德拉的邮件能力（QQ 邮箱）
+# 通过 DSH 的 save_capability（kind: mcp）重建，或按此配置接入 dsh-mcp-client。
+name: email
+kind: mcp
+description: "QQ 邮箱邮件收发：SMTP 发件、IMAP/POP3 收件，基于 sse-email-mcp-server。"
+transport: stdio
+command: npx
+args:
+  - "-y"
+  - "sse-email-mcp-server"
+env:
+  EMAIL_USER: "1591794404@qq.com"
+  EMAIL_PASS: "$DSH_SECRET_QQ_MAIL_AUTH"   # ← 授权码占位，真值走 secret，勿填明文
+  EMAIL_PROVIDER: "qq"
+
+# QQ 邮箱端口参考：
+#   SMTP  smtp.qq.com  587（STARTTLS）/ 465（SSL）
+#   IMAP  imap.qq.com  993（SSL）
+#   POP3  pop.qq.com   995（SSL）
+# 需要在 QQ 邮箱「设置 → 账户」开启 IMAP/SMTP 服务并生成授权码。
