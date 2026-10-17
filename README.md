@@ -22,6 +22,12 @@ DSH 里的一个 Bot（克劳德拉）由三样东西拼成：配置、能力（
 └── README.md
 ```
 
+## 当前能力
+
+- `capabilities/email.yaml` — QQ 邮箱收发（sse-email-mcp-server）
+- `capabilities/playwright.yaml` — 浏览器自动化（微软 Playwright MCP，用本机 Chromium）
+- `docs/atelier.md` — DSH 插件工坊 dsh-atelier 的 7 个插件记录
+
 ## 搬家三步
 
 1. 在新机器装好 DeepSeek Harness；

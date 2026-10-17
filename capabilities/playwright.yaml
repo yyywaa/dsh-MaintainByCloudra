@@ -1,0 +1,16 @@
+# 克劳德拉的浏览器自动化能力（Playwright MCP）
+# 通过 DSH 的 save_capability（kind: mcp）重建；也可按此接入 dsh-mcp-client。
+
+name: playwright
+kind: mcp
+description: "浏览器自动化：驱动 Chromium 打开网页、点击、填表、截图（微软官方 Playwright MCP）。"
+transport: stdio
+command: npx
+args:
+  - "-y"
+  - "@playwright/mcp@latest"
+  - "--browser"
+  - "chrome"
+  # 没有系统 Chrome 时，指定 Playwright 缓存里的 Chromium（路径按本机调整）
+  - "--executable-path"
+  - "~/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing"
