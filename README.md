@@ -28,6 +28,13 @@ DSH 里的一个 Bot（克劳德拉）由三样东西拼成：配置、能力（
 - `capabilities/playwright.yaml` — 浏览器自动化（微软 Playwright MCP，用本机 Chromium）
 - `docs/atelier.md` — DSH 插件工坊 dsh-atelier 的 7 个插件记录
 
+## 小工具
+
+- `scripts/office_patch.py`
+  - `swap-docx-image`：替换 docx 里内嵌的图片部件，可 `--match-aspect` 按正文显示框的比例裁剪，避免被 Word 拉伸；
+  - `fit-pptx-titles`：批量把页眉标题框加宽并关掉自动换行，防止中文长标题被挤成两行。
+  - 都是就地修改，用 `--dry-run` 先看效果。
+
 ## 搬家三步
 
 1. 在新机器装好 DeepSeek Harness；
