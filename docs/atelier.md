@@ -17,3 +17,10 @@
 - 装进 `desktop` profile：`@zfdx123/dsh-atelier ^1.0.14`
 - **desktop profile 由 Electron 应用独占管理**，CLI `dsh plugin --profile desktop add` 会报错，只能走 app 的插件市场 / 设置页。
 - 生效后新增工具：`memory_*`、`skill_manager`、`codegraph_*`，以及 Superpowers 方法论技能。
+
+## 社区里的其它插件集（没装，留着备查）
+
+- [zfdx123/dsh-atelier](https://github.com/zfdx123/dsh-atelier) —— 已在用的那套（7 个插件）。
+- [Yingmoon0715/yingmoon-plugins](https://github.com/Yingmoon0715/yingmoon-plugins) —— 另一个人的 DSH 插件库。
+- [Jedeiah/dsh-plugins](https://github.com/Jedeiah/dsh-plugins) —— 个人常用插件合集。
+- [Aceared0829/dsh-kit](https://github.com/Aceared0829/dsh-kit) —— 插件工具包：自有插件、版本锁定、可重复安装。
