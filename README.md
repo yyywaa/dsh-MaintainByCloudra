@@ -28,6 +28,11 @@ DSH 里的一个 Bot（克劳德拉）由三样东西拼成：配置、能力（
 - `capabilities/playwright.yaml` — 浏览器自动化（微软 Playwright MCP，用本机 Chromium）
 - `docs/atelier.md` — DSH 插件工坊 dsh-atelier 的 7 个插件记录
 
+## 自定义技能
+
+- `skills/office-layout-fix/` —— 修 Word/PPT 成品排版：标题折行、页底空洞、空页、页码、换图拉伸、对齐官方模板。
+  生效位置是 `~/.dsh/skills/office-layout-fix/`，这里是可迁移的副本；改了哪边记得同步。
+
 ## 小工具
 
 - `scripts/office_patch.py`
